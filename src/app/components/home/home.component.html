@@ -1,0 +1,11 @@
+<div class="d-flex">
+    <app-menu [searchArray]="historial" (sentTerm)="setTermClean($event)"></app-menu>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col text-center">
+                <app-search (searchEvent)='getSearchTerm($event)' [term]="term"></app-search>
+            </div>
+        </div>
+        <app-grid [images]="images"></app-grid>
+    </div>
+</div>

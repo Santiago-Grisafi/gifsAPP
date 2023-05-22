@@ -1,0 +1,10 @@
+<div class="bg-dark border-right-3 p-3" id="sidebar">
+    <div class="text-center animate_animated animate__bounce">
+        <img src="./../../../assets/homer.gif" width="128px" alt="Gifs APP">
+    </div>
+    <hr class="text-white">
+    <h3 class="text-white text-center">Gifs APP</h3>
+    <hr class="text-white">
+    <app-items [terms]="searchArray" (sentTerm)="sendTerm($event)"></app-items>
+</div>
+
